@@ -9,7 +9,7 @@ require('dotenv').config();
 try {
 
     //connecting the mongodb
-    mongoose.connect('mongodb://localhost:27017/bqpnotes');
+    mongoose.connect('mongodb+srv://tejasgiri910:567Think@765@cluster0.ytbgztf.mongodb.net/?retryWrites=true&w=majority');
     
 } catch (error) {
     console.log('mongo is not connected')
