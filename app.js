@@ -4,6 +4,7 @@ const Note = require("./models/Noteschema")
 var cors = require('cors');
 const { findByIdAndDelete } = require('./models/Noteschema');
 const { FiRewind } = require('react-icons/fi');
+require('dotenv').config();
 
 try {
 
@@ -15,7 +16,7 @@ try {
 }
 
 
-const port  = 5000;
+const port  = process.env.PORT || 5000;
 const app = express();
 
 //due to cors policy error we have used the cors 
