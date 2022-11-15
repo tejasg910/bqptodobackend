@@ -22,6 +22,10 @@ const app = express();
 //due to cors policy error we have used the cors 
 app.use(cors())
 
+app.get('/', (req, res)=>{
+    res.send("hello bhai")
+})
+
 app.post('/addnote',express.json(), async(req, res)=>{
 //post request for adding the note taking the content from the req.body 
 
